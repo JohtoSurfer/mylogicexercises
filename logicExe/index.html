@@ -37,6 +37,8 @@ Las respuestas y la explicacion las colocare en ingles y espanol pero el codigo 
     console.info('the str has ' + str.length + " characteres")
   }
 }
+     // solution arrow function
+
     
     // ejercicio 2 respuesta
     /*
@@ -51,6 +53,12 @@ Las respuestas y la explicacion las colocare en ingles y espanol pero el codigo 
         return cut
     }
     // solution enhance
+    const cuttingText = (str ="", length = undefined) => (!str)
+    ? console.warn('please add text')
+    : console.info(str.slice(0, length));
+
+    cuttingText('hello word', 3)
+     // solution arrow function
     
     // ejercicio 3 respuesta
     /*
@@ -83,6 +91,7 @@ console.log(splitText(strNumberThree))
         }
 
     // solution enhance
+    // solution arrow function
 
     
 </script>
