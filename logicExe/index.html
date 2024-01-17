@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ejercicios de logica en javascript</title>
+    <title>Logic Js excercises</title>
 </head>
 <body>
     
@@ -13,26 +13,28 @@
 3) Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter, pe. miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal'].
 4) Programa una función que repita un texto X veces, pe. miFuncion('Hola Mundo', 3) devolverá Hola Mundo Hola Mundo Hola Mundo.
 -->
+
 <script>
     // ejercicio 1 respuesta
     /* para este desafio mi solucion fue craear una funcion que devolviera el largo 
     de la cadena use length una propiedad de string (cadena), esta propiedad
     regresa el numero de caracteres en una cadena o string,javascript usa utf-16
     esta propiedad solo cuenta las unidades de codido no lo caracteres. */
-    var strParaPrimera = 'Caracteres a contar';
+    var strNumberOne = 'Characteres to count';
 
-    function contarCaracteres() {
-        return contarCaracteres.length
+    function countCharacteres() {
+        return countCharacteres.length
     }
+    
     // ejercicio 2 respuesta
     /*
     Para resolver este ejercicio primero creare una funcion donde debo implementar el metodo slice, metodo usado para extraer 
     porciones de un arreglo u objeto, mi solucion fue crear una variable local y asignarle un argumento con un numero de unidades 
     o la porcion a cortar en este caso para devolver solo hola mi funcion corta del 0 a 4.
     */
-    var strParaSegunda = 'Hola mundo'
+    var strNumberTwo = 'Hola mundo'
    
-    function cortarTexto(text) {
+    function countText(text) {
         var cut = text.slice(0,4);
         return cut
     }
@@ -42,15 +44,31 @@
     Para el tercer desafio, que no entendi muy bien como estaba formulado, lo que hice fue usar el metodo split para separar el texto en las
     cadenas de una variable, pues asi entendi que debia ser el ejercicio, tambien pense usar el metodo splice pero creo q no aplica en este caso.
     */
-    var strParaTercera = 'tercer desafio';
+    var strNumberThree = 'tercer desafio';
 
-function separarTexto(text) {
+function splitText(text) {
     var split = text.split(' ');
     return split
 }
-console.log(separarTexto(strParaTercera))
+console.log(splitText(strNumberThree))
 
     // ejercicio 4 respuesta
+    /*
+    Para resolver este desafio decidi crear dos variables una con la cadena(string) de texto y otra para la inicializacion del ciclo
+    luego incie un ciclo while con la condicion que debe ser verdadera para iniciar el ciclo, mientras la conidicon sea verdadera se ejecuta
+    lo que esta entre llaves ejemplo, el mensaje que deseo repetir, cuando la condicion  se vuelve falsa se deja de ejecutar el codigo, en este 
+    caso deseo que solo se repita 5 veces. la variable i la debo incrementar para que se evalue la condicion el numero de veces que sea verdadera.
+    */
+
+    var strNumberFour = 'Repetir este Texto';
+    var i = 0;
+
+    while (i <= 4 ) {
+        console.log(strNumberFour);
+        i++; // incrementa hasta
+        }
+
+    
 </script>
 </body>
 </html>
