@@ -47,18 +47,31 @@ Las respuestas y la explicacion las colocare en ingles y espanol pero el codigo 
     o la porcion a cortar en este caso para devolver solo hola mi funcion corta del 0 a 4.
     */
     var strNumberTwo = 'Hola mundo'
-   // my OF solution
+   // my OF solution 
     function countText(text) {
         var cut = text.slice(0,4);
         return cut
     }
     // solution enhance
+    var texto = "funciona o no?";
+    function cutText(text, length) {
+  if(!text) {
+    console.log('please add text')
+  } else {
+    console.log(text.slice(0,length))
+  }
+}
+
+    cutText()
+    cutText(texto,8) // return funciona
+
+ // solution ternary operator
     const cuttingText = (str ="", length = undefined) => (!str)
     ? console.warn('please add text')
     : console.info(str.slice(0, length));
 
     cuttingText('hello word', 3)
-     // solution arrow function
+    
     
     // ejercicio 3 respuesta
     /*
