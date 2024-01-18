@@ -87,6 +87,17 @@ Las respuestas y la explicacion las colocare en ingles y espanol pero el codigo 
 console.log(splitText(strNumberThree))
     // solution enhance
 
+    // solution ternary operator
+    const strSpliting = (str="", spliting = undefined) => (!str)
+? console.warn('please add text')
+:(spliting === undefined)
+? console.warn('please add number of unit to split')
+: console.info(str.split(spliting));
+
+
+strSpliting("the very best like no one ever was"," ")
+
+
     // ejercicio 4 respuesta
     /*
     Para resolver este desafio decidi crear dos variables una con la cadena(string) de texto y otra para la inicializacion del ciclo
@@ -104,7 +115,20 @@ console.log(splitText(strNumberThree))
         }
 
     // solution enhance
-    // solution arrow function
+    const repeatText = (text = "",units = undefined) => {
+  if(!text) return console.warn("please add text");
+  
+  if(units === undefined) return console.warn("please add how many time you wanna repeat the text");
+
+  if(units === 0) return console.error("add a number higher than 0");
+
+  if(Math.sign(units) === -1) return console.error("the number cannot be negative");
+
+  for(let i = 1; i < units; i++) {console.log(`${text},${i}`)
+  }
+}
+
+console.log(repeatText("hola",5)) // retorna el numero deseado y muestra el numero de unidades ingresadas para repetir.
 
     
 </script>
