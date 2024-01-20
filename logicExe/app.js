@@ -125,3 +125,32 @@ strSpliting("the very best like no one ever was"," ")
 }
 
 console.log(repeatText("hola",5)) // retorna el numero deseado y muestra el numero de unidades ingresadas para repetir.
+
+
+  // ejercicio 5 respuesta
+
+  /* 
+  solucion basada en metodo split, para este desafio mi solucion fue crear una funcion reverseText que si no recibe ninguna
+  cadena ensenara una alerta y cuando recibe una cadena de texto,cree un parametro para aplicarle tres metodo y lograr 
+  un resultado, priemro use el metodo split para separar las unidades de la cadena las convierte en un arreglo, luego 
+  el metodo reverse que invierte las sub cadenas con las letras ya separadas y con el indice reverso, luego se debe usar
+  un tercer metodo que convierta las subcadenas a una sola cadena principal con las letras reversas.
+  
+  */
+
+  var text = "reverse this";
+
+  function reverseText(text) {
+    if (!text) {
+      return console.warn("please insert text");
+    } else {
+      let splitStr = text.split(''); // divide las unidades en sub arr
+      console.log("original: " + splitStr); // revierte el arr 
+      splitStr.reverse();
+      let joinArr = splitStr.join(""); // une el arr a str de nuevo ya reverso
+      return console.log("texto reverso: " + joinArr)
+    }
+  }
+  
+  reverseText(text)
+
