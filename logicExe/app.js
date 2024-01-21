@@ -27,7 +27,7 @@ que aprendi despues.
     } 
     // Solution enhace 
     function unitCount(str = "") {
-  if(str) {
+  if(!str) {
     console.warn('please insert str')
   } else {
     console.info('the str has ' + str.length + " characteres")
@@ -153,4 +153,21 @@ console.log(repeatText("hola",5)) // retorna el numero deseado y muestra el nume
   }
   
   reverseText(text)
+  //solution enhance arrow function
+  const strInverse = (str = "") => 
+  (!str)
+  ? console.warn("please add a string")
+  : console.info(str.split("").reverse().join(""))
+
+  strInverse("pokemon") // output "nomekop"
+
+  // ejercicio 6
+
+  var exeSix = "Casa blanca, casa azul, casa amarilla, casa roja";
+
+  function findRepeated() {
+
+  }
+
+
 
