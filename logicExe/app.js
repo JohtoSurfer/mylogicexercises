@@ -162,11 +162,26 @@ console.log(repeatText("hola",5)) // retorna el numero deseado y muestra el nume
   strInverse("pokemon") // output "nomekop"
 
   // ejercicio 6
+  /*
+  Para resolver ese ejercicio lo primero es definir la cadena,
+  luego se debe convertir todos los caracteres a lowecase para que
+  la comparacion sea mas efectiva, dividir la cadena en palabras para 
+  crear dos ciclos que encuentren las palabras diplicadas, el ciclo externo seleccionara
+  e inicara una variables que cuente hasta 1, el ciclo interno debe comprar la palabra con
+  el ciclo exterior si una palabra repetida se encuentra entonces la cuenta debe incrementarse
+  mas 1, si en el ciclo interior la cuenta de palabras iguales es mayor a 1, significa que la palabra
+  tiene un duplicado
+
+  */
 
   var exeSix = "Casa blanca, casa azul, casa amarilla, casa roja";
 
-  function findRepeated() {
+  function findDuplicate(str) {
+    if (!str) {
+      console.warn('please add some text to count the words. ')
+    } else {
 
+    }
   }
 
 
