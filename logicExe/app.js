@@ -174,15 +174,25 @@ console.log(repeatText("hola",5)) // retorna el numero deseado y muestra el nume
 
   */
 
-  var exeSix = "Casa blanca, casa azul, casa amarilla, casa roja";
+  // this solution just returns the letter to be duplicate, still figuring out how to return the entire word
 
   function findDuplicate(str) {
-    if (!str) {
-      console.warn('please add some text to count the words. ')
-    } else {
-
+    let charCount = {};
+  
+    for (let i = 0; i < str.length; i++) {
+      let character = str[i];
+      charCount[character] = (charCount[character] || 0) + 1;
+    }
+  
+    for (let char in charCount) {
+      if (charCount[char] > 1) {
+        console.log(char + ", count = " + charCount[char]);
+      }
     }
   }
+  
+  var exeSix = "Casa blanca, casa azul, casa amarilla, casa roja";
+  findDuplicate(exeSix);
 
 
 
