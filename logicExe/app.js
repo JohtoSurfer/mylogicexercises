@@ -195,4 +195,20 @@ console.log(repeatText("hola",5)) // retorna el numero deseado y muestra el nume
   findDuplicate(exeSix);
 
 
+// ejercicio 7
+
+function palindrome(str) {
+
+  str = str.toLowerCase().replace(/[\W_]/g, '');
+  for(var i = 0, len = str.length - 1; i < len/2; i++) {
+    if(str[i] !== str[len-i]) {
+      return false;
+    }
+  }
+  return true;
+}
+console.log(palindrome("casa asac"))
+
+
+
 
