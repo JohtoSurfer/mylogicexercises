@@ -194,6 +194,17 @@ console.log(repeatText("hola",5)) // retorna el numero deseado y muestra el nume
   var exeSix = "Casa blanca, casa azul, casa amarilla, casa roja";
   findDuplicate(exeSix);
 
+  // this solution only return the amount of words in a string 
+
+  let str = "tres tigres, triste tigrrs, comen los tigres";
+let boundaries = str.match(/\b/g);
+let count = boundaries ? boundaries.length / 2 : 0;
+
+console.log(count, str);
+
+
+
+
 
 // ejercicio 7
 
