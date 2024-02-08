@@ -202,6 +202,10 @@ let count = boundaries ? boundaries.length / 2 : 0;
 
 console.log(count, str);
 
+// real solution
+function duplicateStr(str) {
+  
+}
 
 
 
@@ -219,6 +223,11 @@ function palindrome(str) {
   return true;
 }
 console.log(palindrome("casa asac"))
+
+// ejercico 8
+/* ejercicio numero 8 no etiendo lo requerido.
+
+
 
 
 
